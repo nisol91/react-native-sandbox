@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, Button} from 'react-native';
 import {WebView} from 'react-native-webview';
 import Geolocation from 'react-native-geolocation-service';
 
@@ -29,6 +29,11 @@ export default class MyMap extends Component {
       <View style={styles.container}>
         <View style={styles.testo}>
           <Text>{this.state.title}</Text>
+          <Text>sottotitolo</Text>
+          <Button
+            title="Go to About"
+            onPress={() => this.props.navigation.navigate('MyMap')}
+          />
         </View>
       </View>
     );

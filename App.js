@@ -9,7 +9,7 @@ import Home from './components/Home';
 
 export default class App extends React.Component {
   render() {
-    return <AppContainer style={styles.container} />;
+    return <AppContainer />;
   }
 }
 
@@ -18,7 +18,7 @@ const AppNavigator = createStackNavigator(
     Home: {
       screen: Home,
     },
-    About: {
+    MyMap: {
       screen: MyMap,
     },
   },
