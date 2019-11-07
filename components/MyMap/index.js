@@ -25,7 +25,6 @@ export default class MyMap extends Component {
   }
 
   render() {
-    var titolo = this.state.title;
     return (
       <View style={styles.container}>
         <View style={styles.testo}>

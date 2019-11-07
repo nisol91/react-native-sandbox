@@ -31,8 +31,12 @@ export default class MyMap extends Component {
           <Text>{this.state.title}</Text>
           <Text>sottotitolo</Text>
           <Button
-            title="Go to About"
+            title="Go to Open street"
             onPress={() => this.props.navigation.navigate('MyMap')}
+          />
+          <Button
+            title="Go to thunderforest"
+            onPress={() => this.props.navigation.navigate('MyMap_thunder')}
           />
         </View>
       </View>
@@ -43,7 +47,7 @@ export default class MyMap extends Component {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'cadetblue',
-    height: '90%',
+    height: '100%',
     width: '100%',
     flexDirection: 'column',
   },
