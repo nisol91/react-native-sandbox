@@ -58,8 +58,6 @@ export default class MyMap extends Component {
               integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
               crossorigin=""></script>
               <div id="mapid"></div>
-
-              <div id="mapid"></div>
               <style>#mapid { height: 100%; }</style>
               true
               `,
