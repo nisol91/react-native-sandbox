@@ -6,7 +6,6 @@ import Geolocation from 'react-native-geolocation-service';
 export default class MyMapThunder extends Component {
   state = {
     title: 'thunderforest',
-    key: 34,
     lat: null,
     lon: null,
   };
@@ -33,7 +32,7 @@ export default class MyMapThunder extends Component {
         </View>
         <View style={styles.containerMap}>
           <WebView
-            key={this.state.key}
+            lat={this.state.lat}
             originWhitelist={['*']}
             injectedJavaScript={`
               var mymap= L.map('mapid').setView([44.8, 10.33], 16);

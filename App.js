@@ -1,10 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import {createAppContainer} from 'react-navigation';
-import {
-  createStackNavigator,
-  createBottomTabNavigator,
-} from 'react-navigation-stack';
+import {createStackNavigator} from 'react-navigation-stack';
 
 import TabBar from './components/TabBar';
 import MyMap from './components/MyMap';
@@ -17,23 +14,7 @@ export default class App extends React.Component {
     return <AppContainer style={styles.container} />;
   }
 }
-const bottomTabNavigator = createBottomTabNavigator(
-  {
-    Home: {
-      screen: Home,
-    },
-    MyMap: {
-      screen: MyMap,
-    },
-    MyMap_thunder: {
-      screen: MyMap_thunder,
-    },
-  },
-  {
-    initialRouteName: 'Home',
-  },
-);
-// const AppNavigator = createStackNavigator(
+// const bottomTabNavigator = createBottomTabNavigator(
 //   {
 //     Home: {
 //       screen: Home,
@@ -49,8 +30,27 @@ const bottomTabNavigator = createBottomTabNavigator(
 //     initialRouteName: 'Home',
 //   },
 // );
+const AppNavigator = createStackNavigator(
+  {
+    Home: {
+      screen: Home,
+    },
+    MyMap: {
+      screen: MyMap,
+    },
+    MyMap_thunder: {
+      screen: MyMap_thunder,
+    },
+    // Maps: {
+    //   screen: Maps,
+    // },
+  },
+  {
+    initialRouteName: 'Home',
+  },
+);
 
-const AppContainer = createAppContainer(bottomTabNavigator);
+const AppContainer = createAppContainer(AppNavigator);
 
 const styles = StyleSheet.create({
   container: {

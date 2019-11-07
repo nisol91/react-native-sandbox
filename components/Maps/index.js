@@ -1,4 +1,4 @@
-import WebViewLeaflet from 'react-native-webview-leaflet';
+// import WebViewLeaflet from 'react-native-webview-leaflet';
 import React, {Component} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
